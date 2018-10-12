@@ -12,7 +12,7 @@ load test_helper
   [ "$status" -eq 1 ]
 }
 
-@test "Verify that /tmp is mounted with nodev" {
+@test "Verify that /tmp nodev option" {
   run bash -c "grep '^Options=.*nodev.*' $tmpMount"
   [ "$status" -eq 0 ]
 }
