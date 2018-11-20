@@ -7,6 +7,8 @@ function f_issue {
     TEXT="\\nAuthorized users only. All activity may be monitored and reported.\\n"
     echo -e "$TEXT" > $f
   done
+  
+  cp "./misc/issue.net" /etc/issue.net
 
   ((SCRIPT_COUNT++))
 }

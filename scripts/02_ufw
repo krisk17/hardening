@@ -16,6 +16,7 @@ function f_firewall {
 
   for admin in $FW_ADMIN; do
     ufw allow log from "$admin" to any port 22 proto tcp
+    ufw allow 22
   done
 
   if [[ $VERBOSE == "Y" ]]; then
