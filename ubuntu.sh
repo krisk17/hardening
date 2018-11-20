@@ -97,7 +97,6 @@ function main {
   f_postfix
   f_apport
   f_motdnews
-  f_sshdconfig
   f_password
   f_cron
   f_auditd
