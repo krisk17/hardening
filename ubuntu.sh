@@ -77,7 +77,6 @@ function main {
   done
 
   f_pre
-  f_firewall
   f_disablenet
   f_disablefs
   f_disablemod
@@ -90,6 +89,7 @@ function main {
   f_issue
   f_sysctl
   f_limitsconf
+  f_package_remove
   f_package_install
   f_coredump
   f_postfix
