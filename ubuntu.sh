@@ -80,7 +80,6 @@ function main {
   f_disablenet
   f_disablefs
   f_disablemod
-  f_resolvedconf
   f_journalctl
   f_timesyncd
   f_prelink
