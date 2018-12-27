@@ -96,7 +96,6 @@ function main {
   f_sshdconfig
   f_password
   f_cron
-  f_auditd
   f_rhosts
   f_users
   f_aptget_clean
