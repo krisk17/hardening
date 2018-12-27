@@ -87,7 +87,6 @@ function main {
   f_aptget
   f_issue
   f_sysctl
-  f_limitsconf
   f_package_remove
   f_package_install
   f_coredump
