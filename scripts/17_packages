@@ -15,7 +15,7 @@ function f_package_install {
   echo "postfix postfix/mailname string $(hostname -f)" | debconf-set-selections
 
   local PACKAGE_INSTALL
-  PACKAGE_INSTALL="aide-common auditd debsums libpam-cracklib libpam-tmpdir openssh-server postfix systemd-coredump $VM"
+  PACKAGE_INSTALL="mysql-client auditd debsums libpam-cracklib libpam-tmpdir openssh-server postfix systemd-coredump $VM"
 
   for deb_install in $PACKAGE_INSTALL; do
     $APT install --no-install-recommends "$deb_install"
