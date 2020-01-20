@@ -28,7 +28,7 @@ function f_package_remove {
   echo "[$SCRIPT_COUNT] Package removal"
 
   local PACKAGE_REMOVE
-  PACKAGE_REMOVE="apport* avahi* beep popularity-contest rsh* talk* telnet* tftp* whoopsie xinetd yp-tools ypbind ufw snapd lxcfs apparmor bzip2 sqlite3 ntfs-3g expat mlocate"
+  PACKAGE_REMOVE="apport* avahi* beep popularity-contest rsh* talk* telnet* tftp* whoopsie xinetd yp-tools ypbind ufw snapd lxcfs apparmor bzip2 sqlite3 ntfs-3g expat mlocate librabbitmq4*"
 
   for deb_remove in $PACKAGE_REMOVE; do
     $APT purge "$deb_remove"
